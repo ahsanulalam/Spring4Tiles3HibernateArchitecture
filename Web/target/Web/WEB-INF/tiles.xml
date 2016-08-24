@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/template/layout.jsp">
+		<put-attribute name="title" value="Welcome to site"></put-attribute>
+		<put-attribute name="stylecss" value="/WEB-INF/views/template/stylecss.jsp"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/template/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"></put-attribute>
+		<put-attribute name="scriptjs" value="/WEB-INF/views/template/scriptjs.jsp"></put-attribute>
+	</definition>
+
+        <definition name="home" extends="base.definition">
+	    <put-attribute name="title" value="First Page"></put-attribute>
+	    <put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition>
+        <definition name="secondpage" extends="base.definition">
+	    <put-attribute name="title" value="Second Page"></put-attribute>
+	    <put-attribute name="body" value="/WEB-INF/views/secondbody.jsp"></put-attribute>
+	</definition>
+        <definition name="employeepage" extends="base.definition">
+	    <put-attribute name="title" value="Employee Page"></put-attribute>
+	    <put-attribute name="body" value="/WEB-INF/views/employee.jsp"></put-attribute>
+	</definition>
+        
+</tiles-definitions>
